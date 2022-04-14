@@ -1,16 +1,16 @@
-def readDictVal(dic: dict)->list:
+def readDictVal(dic: dict)->list: ## считывает значения из словарей
     mas = []
     for v in dic.values():
         mas.append(v.strip(''))
     return mas
 
-def readDictKeys(dic: dict)->list:
+def readDictKeys(dic: dict)->list: ## считывает ключи из словарей
     mas = []
     for v in dic.keys():
         mas.append(v.strip(''))
     return mas
 
-def getNameNumber(numb: list, lett: list, name: str):
+def getNameNumber(numb: list, lett: list, name: str): ## производится вычисление числа имени и дальнейший вывод в соответствующее окно
     name_list = list(name)
     name_numbers = 0
     n = 0
